@@ -19,6 +19,7 @@ Template.signup.events({
 
     if(logs.length){
       console.log(logs);
+      Session.set('toasts', [{content: logs}]);
     } else {
       var account = {
         username: '',
@@ -35,6 +36,8 @@ Template.signup.events({
       Accounts.createUser(account, function(err) {
         if(err){
           console.log(err);
+          // TODO: Display nice message instead of raw error
+          Session.set('toasts', [{content: err}]);
         }else{
           console.log('success');
           Router.go('/dashboard');

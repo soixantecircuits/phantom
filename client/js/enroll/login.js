@@ -19,21 +19,23 @@ Template.login.events({
       Meteor.loginWithPassword(user, pass, function(err, res) {
         if(err) {
           if(err.reason == 'User not found'){
-            console.error('Utilisateur introuvable');
+            console.log('Utilisateur introuvable');
+            Session.set('toasts', [{content: 'Utilisateur introuvable'}]);
           } else if(err.reason == 'Login forbidden'){
-            console.error('Le compte n\'a pas encore été validé.');
+            console.log('Le compte n\'a pas encore été validé.');
+            Session.set('toasts', [{content: 'Le compte n\'a pas encore été validé.'}]);
+          } else if(err.reason == 'Incorrect password'){
+            console.log('Mot de passe incorrect');
+            Session.set('toasts', [{content: 'Mot de passe incorrect'}]);
           }
         } else {
           Router.go('/dashboard');
         }
       });
       return false;
-    }
-    for (var i = 0; i < logs.length; i++){
-      cosole.log(logs[i]);
+    } else {
+      console.log(logs);
+      Session.set('toasts', [{content: logs}]);
     }
   },
-  'click #addToast': function(){
-    Session.set('toasts', [{content: Math.random()}]);
-  }
 });
