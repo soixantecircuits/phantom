@@ -1,0 +1,14 @@
+<template name="login">
+  <div class="form-container">
+    <form id="login-form" class="form-vertical" role="form" action="action">
+      <fieldset>
+        <input type="text" name="login-id" id="login-id" placeholder="Email"/><br>
+        <input type="password" name="login-password" id="login-password" placeholder="Mot de passe"/><br>
+        <input type="submit" id="login-button" value="SE CONNECTER" />
+        <p>J'ai oublié mon <a href="/forgot">mot de passe.</a></p>
+        <p>Je n'ai pas encore de compte. <a href="/signup">Créer un compte.</a></p>
+      </fieldset>
+    </form>
+  </div>
+  <button id="addToast">Toast it</button>
+</template>
