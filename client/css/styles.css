@@ -19,6 +19,7 @@ input:not([type="submit"]) {
   -moz-box-shadow: inset 0 0 2px #EEE;
   -webkit-box-shadow: inset 0 0 2px #EEE;
   box-shadow: inset 0 0 2px #EEE;
+  border: 1px solid #CCC;
 }
 
 input[type="submit"] {

@@ -1,0 +1,12 @@
+{
+  "app": {
+    "name": "Phantom"
+  },
+  "email": "email",
+  "password": "mot de passe",
+  "connection": "hello",
+  "login": {
+    "forgot": "J'ai oublié mon <a href=\"/forgot\">mot de passe.</a>",
+    "signup": "Je n'ai pas encore de compte. <a href=\"/signup\">Créer un compte.</a>"
+  }
+}
