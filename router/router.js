@@ -7,7 +7,7 @@ Router.route('/', function(){
 Router.route('/signup');
 Router.route('/thanks');
 Router.route('/forgot');
-Router.route('/newpassword');
+Router.route('/validation');
 
 Router.route('/dashboard', {
   template: 'dashboard',
@@ -15,6 +15,14 @@ Router.route('/dashboard', {
     if(Meteor.userId() == null){
       console.log('User is not connected. Redirecting to signin.');
       this.redirect('/');
+    }else{
+      var isValid = Meteor.users.findOne({_id: Meteor.userId()}).emails[0].verified;
+      console.log(isValid);
+      if(!isValid){
+        Meteor.logout();
+        this.redirect('/');
+        Session.set('toasts', [{content: 'You need to validate your account.'}]);
+      }
     }
   }
 });

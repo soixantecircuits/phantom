@@ -39,9 +39,13 @@ Template.signup.events({
           // TODO: Display nice message instead of raw error
           Session.set('toasts', [{content: err}]);
         }else{
+          Meteor.logout();
           console.log('success');
-          Router.go('/dashboard');
+          Meteor.call('sendVerification', user);
+          Session.set('toasts', [{content: 'Un email de verification vous a été envoyé.'}]);
+          Router.go('/');
         }
+        return false;
       });
     }
   },
