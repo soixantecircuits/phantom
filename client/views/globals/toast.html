@@ -1,11 +1,11 @@
 <template name="toaster">
-  {{#each toasts}}
-    {{> toast}}
-  {{/each}}
+  <div class="toast-container">
+    {{#each toasts}}
+      {{> toast}}
+    {{/each}}
+  </div>
 </template>
 
 <template name="toast">
-  <div class="toast-container">
-    <p>{{content}}</p>
-  </div>
+  <p>{{content}}</p>
 </template>
