@@ -65,3 +65,4 @@ auth.js
 temp/**
 tmp/
 settings.json
+smtp.js
