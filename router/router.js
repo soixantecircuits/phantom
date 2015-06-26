@@ -5,9 +5,7 @@ Router.route('/', function(){
 });
 
 Router.route('/signup');
-Router.route('/thanks');
 Router.route('/forgot');
-Router.route('/validation');
 
 Router.route('/dashboard', {
   template: 'dashboard',

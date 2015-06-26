@@ -1,0 +1,12 @@
+if (Meteor.isServer) {
+  Meteor.startup(function () {
+    smtp = {
+      username: 'your_username',   // eg: hug@soixantecircuits.fr
+      password: 'your_password',   // eg: rootroot
+      server:   'smtp.domain.com',
+      port: 25
+    }
+
+    process.env.MAIL_URL = 'smtp://' + encodeURIComponent(smtp.username) + ':' + encodeURIComponent(smtp.password) + '@' + encodeURIComponent(smtp.server) + ':' + smtp.port;
+  });
+}

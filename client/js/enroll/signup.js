@@ -10,6 +10,9 @@ Template.signup.events({
     if (!user.length){
       logs += 'Renseignez votre email';
     }
+    if(user.match(/[A-Z0-9._%+-]+@[A-Z0-9.-]{3,}\.[A-Z]{2,4}/gi) == undefined){
+      logs += (logs == '' ? 'Renseignez un email valide' : '');
+    }
     if (!pass.length){
       logs += (logs == '' ? 'Renseignez votre mot de passe' : ', votre mot de passe ');
     }
@@ -39,9 +42,9 @@ Template.signup.events({
           // TODO: Display nice message instead of raw error
           Session.set('toasts', [{content: err}]);
         }else{
+          Meteor.call('sendVerification', account.email);
           Meteor.logout();
           console.log('success');
-          Meteor.call('sendVerification', user);
           Session.set('toasts', [{content: 'Un email de verification vous a été envoyé.'}]);
           Router.go('/');
         }

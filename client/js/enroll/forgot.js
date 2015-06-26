@@ -11,6 +11,7 @@ Template.forgot.events({
         }
       }else{
         Session.set('toasts', [{content: 'Un mail vous a été envoyé'}]);
+        Router.go('/');
       }
     });
   }
