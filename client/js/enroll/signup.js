@@ -10,13 +10,13 @@ Template.signup.events({
     if (!user.length){
       logs += 'Renseignez votre email';
     }
-    if(user.match(/[A-Z0-9._%+-]+@[A-Z0-9.-]{3,}\.[A-Z]{2,4}/gi) == undefined){
+    if(user.match(/[A-Z0-9._%+-]+@[A-Z0-9.-]{2,}\.[A-Z]{2,4}/gi) == undefined){
       logs += (logs == '' ? 'Renseignez un email valide' : '');
     }
-    if (!pass.length){
+    if(!pass.length){
       logs += (logs == '' ? 'Renseignez votre mot de passe' : ', votre mot de passe ');
     }
-    if (!confirm.length){
+    if(confirm !== pass){
       logs += (logs == '' ? 'Confirmez votre mot de passe' : ' et confirmez votre mot de passe ');
     }
 
