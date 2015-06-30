@@ -9,3 +9,5 @@ autopublish
 accounts-ui-unstyled
 accounts-password
 iron:router
+cfs:standard-packages
+cfs:filesystem
