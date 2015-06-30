@@ -36,6 +36,7 @@ Template.login.events({
     } else {
       console.log(logs);
       Session.set('toasts', [{content: logs}]);
+      Router.go('/');
     }
   },
 });

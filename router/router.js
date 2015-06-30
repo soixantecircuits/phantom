@@ -1,6 +1,10 @@
 'use strict';
 
 Router.route('/', function(){
+  if(Meteor.userId() !== null){
+    this.render('/dashboard');
+    return;
+  }
   if (Accounts._verifyEmailToken) {
     var self = this;
     this.next();
@@ -32,7 +36,7 @@ Router.route('/dashboard', {
     if(Meteor.userId() == null){
       console.log('User is not connected. Redirecting to signin.');
       this.redirect('/');
-    }else{
+    } else {
       var isValid = Meteor.users.findOne({_id: Meteor.userId()}).emails[0].verified;
       console.log(isValid);
       if(!isValid){
