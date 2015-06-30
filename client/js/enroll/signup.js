@@ -40,7 +40,7 @@ Template.signup.events({
         if(err){
           console.log(err);
           // TODO: Display nice message instead of raw error
-          Session.set('toasts', [{content: err}]);
+          Session.set('toasts', [{content: err.reason}]);
         }else{
           Meteor.call('sendVerification', account.email);
           Meteor.logout();
