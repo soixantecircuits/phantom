@@ -1,0 +1,7 @@
+<template name="dashboard">
+  <h1>Dashboard</h1>
+  <button class="js-new-entry">New entry</button>
+  {{#each entries}}
+    <h3><a href="/entry/{{slug}}">{{title}}</a></h3>
+  {{/each}}
+</template>

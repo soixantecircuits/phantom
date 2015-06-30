@@ -1,0 +1,13 @@
+<template name="edit">
+  <a href="/dashboard">Dashboard</a>
+  <h1>New entry</h1>
+  <div class="form-container">
+    <form id="edit-form" class="form-vertical" role="form" action="action">
+      <fieldset>
+        <input type="text" id="entry-title" name="entry-title" placeholder="Entry title" value="{{entry.title}}" /><br/>
+        <textarea id="entry-description" name="entry-description" placeholder="Entry description" value="{{entry.content}}"></textarea><br/>
+        <input type="submit" id="edit-submit" value="Submit"/>
+      </fieldset>
+    </form>
+  </div>
+</template>

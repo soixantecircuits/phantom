@@ -19,7 +19,7 @@ Router.route('/', function(){
         }
       } else {
         Session.set('toasts', [{content: 'Thank you! Your email address has been confirmed.'}]);
-        self.redirect('/dashboard');
+        this.render('/dashboard');
       }
     });
   } else {
@@ -30,9 +30,7 @@ Router.route('/', function(){
 Router.route('/signup');
 Router.route('/forgot');
 
-Router.route('/dashboard', {
-  template: 'dashboard',
-  data: function(){
+Router.route('/dashboard', function(){
     if(Meteor.userId() == null){
       console.log('User is not connected. Redirecting to signin.');
       this.redirect('/');
@@ -43,5 +41,21 @@ Router.route('/dashboard', {
         Session.set('toasts', [{content: 'You need to validate your account.'}]);
       }
     }
+    this.render('/dashboard');
+  });
+
+Router.route('/new-entry');
+
+Router.route('/entry/:slug', {
+  template: 'entry',
+  data: function(){
+    Session.set('currentSlug', this.params.slug);
+  }
+});
+
+Router.route('/edit/:slug', {
+  template: 'edit',
+  data: function(){
+    Session.set('currentSlug', this.params.slug);
   }
 });
