@@ -13,6 +13,9 @@ Template.newEntry.events({
     if(!desc.length && !logs.length){
       logs = 'No description provided.';
     }
+    if(file == undefined && !logs.length){
+      logs = 'No picture provided.';
+    }
 
     if(!logs.length){
       // See https://gist.github.com/mathewbyrne/1280286
