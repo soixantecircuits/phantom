@@ -66,3 +66,4 @@ temp/**
 tmp/
 settings.json
 smtp.js
+exports/**

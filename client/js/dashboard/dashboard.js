@@ -1,6 +1,9 @@
 Template.dashboard.events({
   'click .js-new-entry': function (event) {
     Router.go('/new-entry');
+  },
+  'click .js-export': function (event) {
+    Meteor.call('exportProducts')
   }
 });
 

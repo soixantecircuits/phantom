@@ -1,5 +1,5 @@
-Images = new FS.Collection("images", {
-  stores: [new FS.Store.FileSystem("images", {path:  "./uploads"})]
+Images = new FS.Collection("Images", {
+  stores: [new FS.Store.FileSystem("public", {path: Meteor.settings.public.uploadPath})]
 });
 
 Images.allow({

@@ -26,7 +26,8 @@ Template.newEntry.events({
         createdAt: new Date(),
         title: title,
         content: desc,
-        slug: slug
+        slug: slug,
+        image: file.name
       });
 
       Images.insert(file, function (err, fileObj) {

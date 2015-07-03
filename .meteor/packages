@@ -11,3 +11,7 @@ accounts-password
 iron:router
 cfs:standard-packages
 cfs:filesystem
+meteorhacks:npm
+
+
+npm-container
