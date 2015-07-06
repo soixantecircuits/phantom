@@ -3,7 +3,9 @@ Template.dashboard.events({
     Router.go('/new-entry');
   },
   'click .js-export': function (event) {
-    Meteor.call('exportProducts')
+    Meteor.call('exportProducts', function(){
+      window.location = '/exports.zip', '_blank';
+    });
   }
 });
 

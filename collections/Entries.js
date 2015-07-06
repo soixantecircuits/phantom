@@ -11,9 +11,7 @@ Entries.allow({
     }
   },
   update: function (userId, doc, fieldNames, modifier) {
-    if(doc.createdBy === userId){
-      return true;
-    }
-    return false;
+    console.log('Entries.js:14 - update');
+    return true;
   }
 });

@@ -16,11 +16,8 @@ Meteor.methods({
             console.log('done with the zip');
         });
         zipArchive.pipe(output);
-        zipArchive.bulk([
-          { src: [base + '/public/exports/**'] },
-          { expand: true, cwd: 'arcive-exports'}
-        ]);
-        zipArchive.finalize(function(err, bytes) {
+        zipArchive.directory(base + '/public/exports/', false);
+        zipArchive.finalize(function (err, bytes) {
             if(err) {
               throw err;
             }
