@@ -8,7 +8,7 @@ Template.login.events({
     // If validation passes, supply the appropriate fields to the
     // Meteor.loginWithPassword() function.
 
-    if(!user.length){
+    if(!user.length || !validator.isEmail(user)){
       logs += 'No email provided';
     }
     if(!pass.length){

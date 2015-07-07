@@ -10,14 +10,14 @@ Template.signup.events({
     if (!user.length){
       logs += 'Renseignez votre email';
     }
-    if(user.match(/[A-Z0-9._%+-]+@[A-Z0-9.-]{2,}\.[A-Z]{2,4}/gi) == undefined){
+    if(validator.isEmail(user)){
       logs += (logs == '' ? 'Renseignez un email valide' : '');
     }
-    if(!pass.length){
+    if(pass.length < 6){
       logs += (logs == '' ? 'Renseignez votre mot de passe' : ', votre mot de passe ');
     }
     if(confirm !== pass){
-      logs += (logs == '' ? 'Confirmez votre mot de passe' : ' et confirmez votre mot de passe ');
+      logs += (logs == '' ? 'Confirmez votre mot de passe.' : ' et confirmez votre mot de passe.');
     }
 
     if(logs.length){
@@ -26,13 +26,13 @@ Template.signup.events({
     } else {
       var account = {
         username: '',
-        email: user,
+        email: user.toLowerCase(),
         password: pass,
         profile: {
           first_name: '',
           last_name: '',
           username: '',
-          email: user,
+          email: user.toLowerCase(),
         }
       };
       console.log(account);

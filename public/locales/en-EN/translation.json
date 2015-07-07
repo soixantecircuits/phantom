@@ -5,7 +5,7 @@
   "login": {
     "email": "email",
     "password": "password",
-    "connection": "hello",
+    "connection": "connection",
     "forgot": "I have lost my <a href=\"/forgot\">password</a>",
     "signup": "I don't have an account. <a href=\"/signup\">Create one.</a>"
   }

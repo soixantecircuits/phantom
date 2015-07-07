@@ -1,13 +1,21 @@
 <template name="login">
-  <div class="form-container">
-    <form id="login-form" class="form-vertical" role="form" action="action">
-      <fieldset>
-        <input type="email" name="login-id" id="login-id" data-i18n="[placeholder]login.email"/><br>
-        <input type="password" name="login-password" id="login-password" data-i18n="[placeholder]login.password"/><br>
-        <input type="submit" id="login-button" data-i18n="[value]login.connection" />
-        <p data-i18n="[html]login.forgot"></p>
-        <p data-i18n="[html]login.signup"></p>
-      </fieldset>
-    </form>
+  <div class="row">
+    <div class="col-sm-8 .col-sm-offset-2 .col-md-6 .col-md-offset-3">
+      <form id="login-form" class="form-vertical" role="form" action="action">
+        <div class="form-group">
+          <label for="login-id" data-i18n="login.email"></label>
+          <input type="email" name="login-id" id="login-id" class="form-control" data-i18n="[placeholder]login.email"/>
+        </div>
+        <div class="form-group">
+          <label for="login-password" data-i18n="login.password"></label>
+          <input type="password" name="login-password" id="login-password" class="form-control" data-i18n="[placeholder]login.password"/>
+        </div>
+        <input type="submit" id="login-button" class="btn btn-default" data-i18n="[value]login.connection" />
+        <div class="form-group">
+          <p data-i18n="[html]login.forgot" class="help-block"></p>
+          <p data-i18n="[html]login.signup" class="help-block"></p>
+        </div>
+      </form>
+    </div>
   </div>
 </template>

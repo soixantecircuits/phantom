@@ -33,12 +33,12 @@ Template.newEntry.events({
           Entries.insert({
             createdBy: Meteor.userId(),
             createdAt: new Date(),
-            title: title,
-            content: desc,
-            also: also,
-            extras: extras,
-            capacity: capacity,
-            slug: slug,
+            title: xssFilters.inHTMLData(title),
+            content: xssFilters.inHTMLData(desc),
+            also: xssFilters.inHTMLData(also),
+            extras: xssFilters.inHTMLData(extras),
+            capacity: xssFilters.inHTMLData(capacity),
+            slug: xssFilters.inHTMLData(slug),
             image: Images.findOne({_id: fileObj._id}).copies.images.key
           }, function(err){
             if(err){
