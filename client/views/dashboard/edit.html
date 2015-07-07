@@ -1,13 +1,35 @@
 <template name="edit">
-  <a href="/dashboard">Dashboard</a>
-  <h1>New entry</h1>
-  <div class="form-container">
-    <form id="edit-form" class="form-vertical" role="form" action="action">
-      <fieldset>
-        <input type="text" id="entry-title" name="entry-title" placeholder="Entry title" value="{{entry.title}}" /><br/>
-        <textarea id="entry-description" name="entry-description" placeholder="Entry description" value="{{entry.content}}"></textarea><br/>
-        <input type="submit" id="edit-submit" value="Submit"/>
-      </fieldset>
-    </form>
+  <div class="row">
+    <div class="col-xs-10 col-xs-offset-2">
+      <a href="/dashboard" data-i18n="dashboard.back"></a>
+      <h1 data-i18n="dashboard.newentry-title"></h1>
+      <form id="entry-form" role="form" action="action">
+        <div class="form-group">
+          <label for="entry-title" data-i18n="dashboard.newentry-title-input"></label>
+          <input type="text" class="form-control" id="entry-title" name="entry-title" value="{{entry.title}}" />
+        </div>
+        <div class="form-group">
+          <label for="entry-description" data-i18n="dashboard.entry-description-input"></label>
+          <textarea class="form-control" id="entry-description" name="entry-description" value="{{entry.content}}"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="entry-capacity" data-i18n="dashboard.entry-capacity-input"></label>
+          <input type="text" class="form-control" id="entry-capacity" name="entry-capacity" value="{{entry.capacity}}" />
+        </div>
+        <div class="form-group">
+          <label for="entry-also" data-i18n="dashboard.entry-also-input"></label>
+          <input type="text" class="form-control" id="entry-also" name="entry-also" value="{{entry.also}}" />
+        </div>
+        <div class="form-group">
+          <label for="entry-extras" data-i18n="dashboard.entry-extras-input"></label>
+          <input type="text" class="form-control" id="entry-extras" name="entry-extras" value="{{entry.extras}}" />
+        </div>
+        <div class="form-group">
+          <label for="entry-image" data-i18n="dashboard.entry-image-input"></label>
+          <input type="file" id="entry-image" accept="image/*" multiple="false" name="entry-image" />
+        </div>
+        <input type="submit" class="btn btn-default" id="edit-submit" data-i18n="dashboard.submit"/>
+      </form>
+    </div>
   </div>
 </template>

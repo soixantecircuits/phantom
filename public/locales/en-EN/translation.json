@@ -32,8 +32,16 @@
     "newentry": "New entry",
     "export": "Export",
     "list-title": "Entry list",
-    "return": "&larr; Dashboard",
+    "back": "<- Dashboard",
     "entry-title": "Entry",
-    "edit": "Edit this entry"
+    "edit": "Edit this entry",
+    "newentry-title": "New entry",
+    "newentry-title-input": "Entry title",
+    "entry-description-input": "Entry description",
+    "entry-capacity-input": "Entry capacity",
+    "entry-also-input": "Entry variants",
+    "entry-extras-input": "Entry extra informations",
+    "entry-image-input": "Entry image",
+    "submit": "Submit"
   }
 }

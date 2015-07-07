@@ -1,17 +1,35 @@
 <template name="newEntry">
-  <a href="/dashboard">Dashboard</a>
-  <h1>New entry</h1>
-  <div class="form-container">
-    <form id="entry-form" class="form-vertical" role="form" action="action">
-      <fieldset>
-        <input type="text" id="entry-title" name="entry-title" placeholder="Entry title" /><br/>
-        <textarea id="entry-description" name="entry-description" placeholder="Entry description"></textarea><br/>
-        <input type="text" id="entry-capacity" name="entry-capacity" placeholder="Entry capacity" /><br/>
-        <input type="text" id="entry-also" name="entry-also" placeholder="Entry variants" /><br/>
-        <input type="text" id="entry-extras" name="entry-extras" placeholder="Entry extras informations" /><br/>
-        <input type="file" id="entry-image" accept="image/*" multiple="false" name="entry-image" placeholder="Entry image" /><br/>
-        <input type="submit" id="entry-submit" value="Submit"/>
-      </fieldset>
-    </form>
+  <div class="row">
+    <div class="col-xs-10 col-xs-offset-2">
+      <a href="/dashboard" data-i18n="dashboard.back"></a>
+      <h1 data-i18n="dashboard.newentry-title"></h1>
+      <form id="entry-form" role="form" action="action">
+        <div class="form-group">
+          <label for="entry-title" data-i18n="dashboard.newentry-title-input"></label>
+          <input type="text" class="form-control" id="entry-title" name="entry-title" data-i18n="[placeholder]dashboard.newentry-title-input" />
+        </div>
+        <div class="form-group">
+          <label for="entry-description" data-i18n="dashboard.entry-description-input"></label>
+          <textarea class="form-control" id="entry-description" name="entry-description" data-i18n="[placeholder]dashboard.entry-description-input"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="entry-capacity" data-i18n="dashboard.entry-capacity-input"></label>
+          <input type="text" class="form-control" id="entry-capacity" name="entry-capacity" data-i18n="[placeholder]dashboard.entry-capacity-input" />
+        </div>
+        <div class="form-group">
+          <label for="entry-also" data-i18n="dashboard.entry-also-input"></label>
+          <input type="text" class="form-control" id="entry-also" name="entry-also" data-i18n="[placeholder]dashboard.entry-also-input" />
+        </div>
+        <div class="form-group">
+          <label for="entry-extras" data-i18n="dashboard.entry-extras-input"></label>
+          <input type="text" class="form-control" id="entry-extras" name="entry-extras" data-i18n="[placeholder]dashboard.entry-extras-input" />
+        </div>
+        <div class="form-group">
+          <label for="entry-image" data-i18n="dashboard.entry-image-input"></label>
+          <input type="file" id="entry-image" accept="image/*" multiple="false" name="entry-image" />
+        </div>
+        <input type="submit" class="btn btn-default" id="entry-submit" data-i18n="dashboard.submit"/>
+      </form>
+    </div>
   </div>
 </template>

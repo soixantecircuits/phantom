@@ -32,8 +32,16 @@
     "newentry": "Nouvelle entrée",
     "export": "Exporter",
     "list-title": "Liste des entrées",
-    "return": "&larr; Contre de contrôle",
+    "back": "<- Contre de contrôle",
     "entry-title": "Entrée",
-    "edit": "Modifier cette entrée"
+    "edit": "Modifier cette entrée",
+    "newentry-title": "Nouvelle entrée",
+    "newentry-title-input": "Titre de l'entrée",
+    "entry-description-input": "Description de l'entrée",
+    "entry-capacity-input": "Capacité de l'entrée",
+    "entry-also-input": "Variantes de l'entrée",
+    "entry-extras-input": "Informations supplémentaires",
+    "entry-image-input": "Image de l'entrée",
+    "submit": "Soumettre"
   }
 }
