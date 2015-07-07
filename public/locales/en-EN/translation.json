@@ -3,24 +3,37 @@
     "name": "Phantom"
   },
   "login": {
-    "email": "email",
-    "password": "password",
-    "connection": "connection",
+    "title": "Login",
+    "email": "Email",
+    "password": "Password",
+    "connection": "Connection",
     "forgot": "I have lost my <a href=\"/forgot\">password</a>",
     "signup": "I don't have an account. <a href=\"/signup\">Create one.</a>"
   },
   "signup": {
-    "email": "email",
-    "password": "password",
-    "connection": "connection",
+    "title": "Signup",
+    "email": "Email",
+    "password": "Password",
+    "connection": "Connection",
     "forgot": "I have lost my <a href=\"/forgot\">password</a>",
     "signup": "I don't have an account. <a href=\"/signup\">Create one.</a>",
     "confirm": "Confirm password",
     "submit": "Submit"
   },
   "forgot": {
+    "title": "I forgot my password",
     "help": "Enter your email and get a reset link.",
     "email": "Your email",
     "submit": "Submit"
+  },
+  "dashboard": {
+    "logout": "Log out",
+    "title": "Dashboard",
+    "newentry": "New entry",
+    "export": "Export",
+    "list-title": "Entry list",
+    "return": "&larr; Dashboard",
+    "entry-title": "Entry",
+    "edit": "Edit this entry"
   }
 }

@@ -3,24 +3,37 @@
     "name": "Phantom"
   },
   "login": {
-    "email": "email",
-    "password": "mot de passe",
-    "connection": "connexion",
+    "title": "Connexion",
+    "email": "Email",
+    "password": "Mot de passe",
+    "connection": "Connexion",
     "forgot": "J'ai oublié mon <a href=\"/forgot\">mot de passe.</a>",
     "signup": "Je n'ai pas encore de compte. <a href=\"/signup\">Créer un compte.</a>"
   },
   "signup": {
-    "email": "email",
-    "password": "mot de passe",
-    "connection": "connexion",
+    "title": "Créer un compte",
+    "email": "Email",
+    "password": "Mot de passe",
+    "connection": "Connexion",
     "forgot": "J'ai oublié mon <a href=\"/forgot\">mot de passe.</a>",
     "signup": "Je n'ai pas encore de compte. <a href=\"/signup\">Créer un compte.</a>",
     "confirm": "Confirmation",
     "submit": "Soumettre"
   },
   "forgot": {
+    "title": "J'ai oublié mon mot de passe",
     "help": "Rentrez votre email pour obtenir un lien de récuperation de mot de passe.",
     "email": "Votre email",
     "submit": "Soumettre"
+  },
+  "dashboard": {
+    "logout": "Déconnexion",
+    "title": "Centre de contrôle",
+    "newentry": "Nouvelle entrée",
+    "export": "Exporter",
+    "list-title": "Liste des entrées",
+    "return": "&larr; Contre de contrôle",
+    "entry-title": "Entrée",
+    "edit": "Modifier cette entrée"
   }
 }

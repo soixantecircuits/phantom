@@ -1,6 +1,20 @@
 <template name="entry">
-  <a href="/dashboard">Dashboard</a>
-  <h2>{{entry.title}}</h2>
-  <code>{{entry.content}}</code>
-  <button class="js-edit">Edit this entry</button>
+  <div class="row">
+    <div class="col-xs-10 col-xs-offset-2">
+      <a href="/dashboard" data-i18n="dashboard.return"></a>
+      <h1 data-i18n="dashboard.entry-title"></h1>
+      <div class="media">
+        <div class="media-left">
+          <img src="/exports/images/{{entry.image}}" class="media-object thumbnail" width="300" />
+        </div>
+        <div class="media-body">
+          <h2 class="media-heading">{{entry.title}} <small>{{entry.capacity}}</small></h2>
+          <p class="lead">{{entry.content}}</p>
+          <p><em>{{entry.also}}</em></p>
+          <p><em>{{entry.extras}}</em></p>
+        </div>
+      </div>
+      <button class="js-edit btn btn-default" data-i18n="dashboard.edit"></button>
+    </div>
+  </div>
 </template>

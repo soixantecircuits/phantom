@@ -1,8 +1,20 @@
 <template name="dashboard">
-  <h1>Dashboard</h1>
-  <button class="js-new-entry">New entry</button>
-  {{#each entries}}
-    <h3><a href="/entry/{{slug}}">{{title}}</a></h3>
-  {{/each}}
-  <button class="js-export">Export</button>
+  <div class="row">
+    <div class="col-xs-10 col-xs-offset-2">
+      <h1 data-i18n="dashboard.title"></h1>
+      <button class="js-new-entry btn btn-primary" data-i18n="dashboard.newentry"></button>
+      <button class="js-export btn btn-default" data-i18n="dashboard.export"></button>
+      <h4 data-i18n="dashboard.list-title"></h4>
+      <ul class="list-group">
+        {{#each entries}}
+          <li class="list-group-item">
+            <a href="/entry/{{slug}}">
+              <img class="img-thumbnail" width="100" src="/exports/images/{{image}}">
+              <strong>{{title}}</strong>
+            </a>
+          </li>
+        {{/each}}
+      </ul>
+    </div>
+  </div>
 </template>
