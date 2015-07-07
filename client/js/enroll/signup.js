@@ -10,7 +10,7 @@ Template.signup.events({
     if (!user.length){
       logs += 'Renseignez votre email';
     }
-    if(validator.isEmail(user)){
+    if(!validator.isEmail(user)){
       logs += (logs == '' ? 'Renseignez un email valide' : '');
     }
     if(pass.length < 6){

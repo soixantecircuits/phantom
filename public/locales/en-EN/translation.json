@@ -8,5 +8,19 @@
     "connection": "connection",
     "forgot": "I have lost my <a href=\"/forgot\">password</a>",
     "signup": "I don't have an account. <a href=\"/signup\">Create one.</a>"
+  },
+  "signup": {
+    "email": "email",
+    "password": "password",
+    "connection": "connection",
+    "forgot": "I have lost my <a href=\"/forgot\">password</a>",
+    "signup": "I don't have an account. <a href=\"/signup\">Create one.</a>",
+    "confirm": "Confirm password",
+    "submit": "Submit"
+  },
+  "forgot": {
+    "help": "Enter your email and get a reset link.",
+    "email": "Your email",
+    "submit": "Submit"
   }
 }

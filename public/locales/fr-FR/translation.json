@@ -8,5 +8,19 @@
     "connection": "connexion",
     "forgot": "J'ai oublié mon <a href=\"/forgot\">mot de passe.</a>",
     "signup": "Je n'ai pas encore de compte. <a href=\"/signup\">Créer un compte.</a>"
+  },
+  "signup": {
+    "email": "email",
+    "password": "mot de passe",
+    "connection": "connexion",
+    "forgot": "J'ai oublié mon <a href=\"/forgot\">mot de passe.</a>",
+    "signup": "Je n'ai pas encore de compte. <a href=\"/signup\">Créer un compte.</a>",
+    "confirm": "Confirmation",
+    "submit": "Soumettre"
+  },
+  "forgot": {
+    "help": "Rentrez votre email pour obtenir un lien de récuperation de mot de passe.",
+    "email": "Votre email",
+    "submit": "Soumettre"
   }
 }

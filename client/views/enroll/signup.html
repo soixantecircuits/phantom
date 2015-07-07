@@ -1,18 +1,21 @@
 <template name="signup">
-  <div class="container">
-    <div class="form-container">
-      <form id="signup-form" class="form-vertical" role="form" action="action">
-        <fieldset>
-          <input type="email" name="signup-email" placeholder="Email"/><br>
-          <input type="password" name="signup-password" placeholder="Mot de passe"/><br>
-          <input type="password" name="signup-password-confirm" placeholder="Confirmation"/><br>
-          <input class="btn btn-primary" type="submit" id="signup-button" value="S'INSCRIRE" />
-        </fieldset>
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+      <form id="signup-form" role="form" action="action">
+        <div class="form-group">
+          <label for="signup-email" data-i18n="signup.email"></label>
+          <input type="email" name="signup-email" id="signup-email" class="form-control" data-i18n="[placeholder]signup.email"/>
+        </div>
+        <div class="form-group">
+          <label for="signup-password" data-i18n="signup.password"></label>
+          <input type="password" name="signup-password" id="signup-password" class="form-control" data-i18n="[placeholder]signup.password"/>
+        </div>
+        <div class="form-group">
+          <label for="signup-confirm" data-i18n="signup.confirm"></label>
+          <input type="password" name="signup-password-confirm" id="signup-confirm" class="form-control" data-i18n="[placeholder]signup.confirm"/>
+        </div>
+        <input type="submit" id="signup-button" class="btn btn-default" data-i18n="[value]signup.submit" />
       </form>
-    </div>
-    <div class="alert">
-      <span class="alert-success"></span>
-      <span class="alert-warning"></span>
     </div>
   </div>
 </template>

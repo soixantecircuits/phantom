@@ -1,11 +1,14 @@
 <template name="forgot">
-  <div class="form-container">
-    <form id="forgot-form" class="form-vertical" role="form" action="action">
-      <fieldset>
-        <p>Rentrez votre email pour obtenir un lien de récuperation de mot de passe.</p>
-        <input type="email" name="email" id="email" placeholder="Votre email"/><br>
-        <input type="submit" id="login-button" value="ENVOYER" />
-      </fieldset>
-    </form>
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+      <form id="forgot-form" role="form" action="action">
+        <p class="help-block" data-i18n="forgot.help"></p>
+        <div class="form-group">
+          <label for="email" data-i18n="forgot.email"></label>
+          <input type="email" name="email" class="form-control" id="email" data-i18n="[placeholder]forgot.email"/>
+        </div>
+        <input type="submit" class="btn btn-default" id="login-button" data-i18n="[value]forgot.submit" />
+      </form>
+    </div>
   </div>
 </template>
