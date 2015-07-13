@@ -8,10 +8,14 @@ It is currently under active development.
 
 Make sure you have [meteor](https://www.meteor.com/install) and [mongodb](http://docs.mongodb.org/manual/installation/) installed.
 
+
 ## Installation and usage
 
-After cloning the repository, all you have to do is:
+1. Clone the repo
+2. Create a `settings.json` file based from `settings.example.json` and fill with as you wish. 
+Note: the folder must exist ;-)
+3. Run `meteor --settings settings.json`
 
-```bash
-$ meteor
-```
+## Troubleshouting
+
+If installation instructions don't work, try doing this as root.
