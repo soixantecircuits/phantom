@@ -1,98 +1,14 @@
 [
   {
-    "_id": "5Ltg6gn23vvMDsAkG",
-    "createdBy": "6rqg7MN8Q266s2mvr",
-    "createdAt": "2015-07-10T09:17:02.743Z",
-    "title": "Fanta",
-    "content": "Strategize paradigms implement user-centred granular seize deliverables monetize extensible;",
+    "_id": "8FpXRhfPawDRwCswG",
+    "createdBy": "B4gYvxCRwwDvsJFn7",
+    "createdAt": "2015-07-13T15:19:14.846Z",
+    "title": "My entry title #1",
+    "content": "This is an awesome description for My entry title #1",
     "also": "",
     "extras": "",
-    "capacity": "1L",
-    "slug": "fanta",
-    "image": "Images-ErNDhrxqPf4zdZ2fJ-FantaPommeCerise1-5L.png"
-  },
-  {
-    "_id": "tfoqhZymkz8QT5axG",
-    "createdBy": "6rqg7MN8Q266s2mvr",
-    "createdAt": "2015-07-10T09:16:43.178Z",
-    "title": "Finley",
-    "content": "Strategize paradigms implement user-centred granular seize deliverables monetize extensible;",
-    "also": "",
-    "extras": "",
-    "capacity": "1L",
-    "slug": "finley",
-    "image": "Images-AZXsSqjNekNGBRhk3-FinleyPommeCitron1-5L.png"
-  },
-  {
-    "_id": "ZayJnFSjgvPnvyAkB",
-    "createdBy": "6rqg7MN8Q266s2mvr",
-    "createdAt": "2015-07-10T09:16:23.604Z",
-    "title": "Lipton Ice Tea",
-    "content": "Strategize paradigms implement user-centred granular seize deliverables monetize extensible;",
-    "also": "",
-    "extras": "",
-    "capacity": "1L",
-    "slug": "lipton-ice-tea",
-    "image": "Images-qTWeRnSApNzsmLdLz-LiptonIceTeaPomme1-5L.png"
-  },
-  {
-    "_id": "rsMSLGarhQwwWp7en",
-    "createdBy": "6rqg7MN8Q266s2mvr",
-    "createdAt": "2015-07-10T09:15:44.410Z",
-    "title": "Schwepps agrum",
-    "content": "Strategize paradigms implement user-centred granular seize deliverables monetize extensible;",
-    "also": "",
-    "extras": "",
-    "capacity": "1L",
-    "slug": "schwepps-agrum",
-    "image": "Images-4CKiHhRc8otA8crQE-SchweppesAgrum1L.png"
-  },
-  {
-    "_id": "FFMJ8KYjP6zmT8vZi",
-    "createdBy": "6rqg7MN8Q266s2mvr",
-    "createdAt": "2015-07-10T09:15:12.015Z",
-    "title": "Coca life 1L",
-    "content": "Strategize paradigms implement user-centred granular seize deliverables monetize extensible;",
-    "also": "Existe aussi en 6x33cL et 1.5L",
-    "extras": "30% de sucres en moins",
-    "capacity": "1L",
-    "slug": "coca-life-1l",
-    "image": "Images-2QwWtdmPqKwcosCXH-cocalife1L.png"
-  },
-  {
-    "_id": "ryGT6oihL8ExEs9XL",
-    "createdBy": "6rqg7MN8Q266s2mvr",
-    "createdAt": "2015-07-10T09:14:29.255Z",
-    "title": "Coca life 1.5L",
-    "content": "Strategize paradigms implement user-centred granular seize deliverables monetize extensible;",
-    "also": "Existe aussi en 6x33cL et 1L",
-    "extras": "30% de sucres en moins",
-    "capacity": "1.5L",
-    "slug": "coca-life-15l",
-    "image": "Images-ZgXPw6SqFpWvNdvdh-cocalife1-5L.png"
-  },
-  {
-    "_id": "kNpwG8PoEnLMkNrec",
-    "createdBy": "6rqg7MN8Q266s2mvr",
-    "createdAt": "2015-07-10T09:13:55.025Z",
-    "title": "Coca life 6x33cL",
-    "content": "Strategize paradigms implement user-centred granular seize deliverables monetize extensible;",
-    "also": "Existe aussi en 1.5L et 1L",
-    "extras": "30% de sucres en moins",
-    "capacity": "6x33cL",
-    "slug": "coca-life-6x33cl",
-    "image": "Images-6bmSxTifuWGanha4L-Coca-Cola-life6x33cl.png"
-  },
-  {
-    "_id": "CCsLZ9AGkwD2PxjZe",
-    "createdBy": "6rqg7MN8Q266s2mvr",
-    "createdAt": "2015-07-10T09:13:10.437Z",
-    "title": "Oasis",
-    "content": "Strategize paradigms implement user-centred granular seize deliverables monetize extensible;",
-    "also": "",
-    "extras": "",
-    "capacity": "1L",
-    "slug": "oasis",
-    "image": "Images-b4vDcvNHKWuSSTnTZ-OasisFraiseBanane2L.png"
+    "capacity": "5",
+    "slug": "my-entry-title-1",
+    "image": "Images-unM8RQ6fXtrZHAwtM-page-accueil-mozilla.jpg"
   }
 ]
