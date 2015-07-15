@@ -17,6 +17,7 @@ Meteor.methods({
         });
         zipArchive.pipe(output);
         zipArchive.directory(base + '/public/exports/', false);
+        zipArchive.directory(Meteor.settings.public.uploadPath, 'images');
         zipArchive.finalize(function (err, bytes) {
             if(err) {
               throw err;
