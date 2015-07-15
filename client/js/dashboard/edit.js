@@ -5,11 +5,14 @@ Template.edit.helpers({
 });
 
 Template.edit.events({
-  'submit #edit-form': function (event) {
+  "submit #edit-form": function (event) {
     event.preventDefault();
 
     var title = $(event.target).find('[name="entry-title"]').val();
     var desc = $(event.target).find('[name="entry-description"]').val();
+    var capacity = $(event.target).find('[name="entry-description"]').val();
+    var also = $(event.target).find('[name="entry-also"]').val();
+    var extras = $(event.target).find('[name="entry-extras"]').val();
     var logs = '';
 
     if(!title.length){
@@ -17,6 +20,9 @@ Template.edit.events({
     }
     if(!desc.length && !logs.length){
       logs = 'No description provided.';
+    }
+    if(!capacity.length && !logs.length){
+      logs = 'No capacity provided';
     }
 
     if(!logs.length){
@@ -29,7 +35,16 @@ Template.edit.events({
         $set: {
           title: title,
           content: desc,
+          capacity: capacity,
+          also: also,
+          extras: extras,
           slug: slug
+        }
+      }, function(err, response){
+        if(err){
+          console.log('Error: ',err);
+        } else {
+          Router.go('/');
         }
       });
     } else {
@@ -37,6 +52,11 @@ Template.edit.events({
       Session.set('toasts', [{content: logs}]);
     }
 
+
+
+    // Entries.findOne({slug: Session.get('currentSlug')}, function(err, data){
+    //   console.log(data);
+    // });
     return false;
   }
 });

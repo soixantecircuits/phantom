@@ -5,7 +5,7 @@
       <h1 data-i18n="dashboard.entry-title"></h1>
       <div class="media">
         <div class="media-left">
-          <img src="/exports/images/{{entry.image}}" class="media-object thumbnail" width="300" />
+          <img src="{{imgFolder}}/{{entry.image}}" class="media-object thumbnail" width="300" />
         </div>
         <div class="media-body">
           <h2 class="media-heading">{{entry.title}} <small>{{entry.capacity}}</small></h2>
@@ -14,7 +14,7 @@
           <p><em>{{entry.extras}}</em></p>
         </div>
       </div>
-      <button class="js-edit btn btn-default" data-i18n="dashboard.edit"></button>
+      <button class="js-edit btn btn-default" data-i18n="dashboard.edit">Edit</button>
     </div>
   </div>
 </template>
