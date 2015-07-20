@@ -1,5 +1,23 @@
 'use strict';
 
+Iron.Router.hooks.checkIfLogged = function(){
+  if(Meteor.userId() == null){
+    console.log('User is not connected. Redirecting to signin.');
+    this.redirect('/');
+  } else {
+    if(Meteor.call('isUserValidated')){
+      Meteor.logout();
+      this.redirect('/');
+      Session.set('toasts', [{content: 'You need to validate your account.'}]);
+    }
+  }
+  this.next();
+};
+
+Router.onBeforeAction('checkIfLogged', {
+  only: ['dashboard', 'entry.slug', 'edit.slug', 'new.entry']
+});
+
 Router.route('/', function(){
   if(Meteor.userId() !== null){
     this.render('/dashboard');
@@ -30,23 +48,16 @@ Router.route('/', function(){
 Router.route('/signup');
 Router.route('/forgot');
 
-Router.route('/dashboard', function(){
-    if(Meteor.userId() == null){
-      console.log('User is not connected. Redirecting to signin.');
-      this.redirect('/');
-    } else {
-      if(Meteor.call('isUserValidated')){
-        Meteor.logout();
-        this.redirect('/');
-        Session.set('toasts', [{content: 'You need to validate your account.'}]);
-      }
-    }
-    this.render('/dashboard');
-  });
+Router.route('/dashboard', {
+  name: 'dashboard',
+});
 
-Router.route('/new-entry');
+Router.route('/new-entry', {
+  name: 'new.entry',
+});
 
 Router.route('/entry/:slug', {
+  name: 'entry.slug',
   template: 'entry',
   data: function(){
     Session.set('currentSlug', this.params.slug);
@@ -54,6 +65,7 @@ Router.route('/entry/:slug', {
 });
 
 Router.route('/edit/:slug', {
+  name: 'edit.slug',
   template: 'edit',
   data: function(){
     Session.set('currentSlug', this.params.slug);
