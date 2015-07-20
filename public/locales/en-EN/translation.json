@@ -42,6 +42,7 @@
     "entry-also-input": "Entry variants",
     "entry-extras-input": "Entry extra informations",
     "entry-image-input": "Entry image",
-    "submit": "Submit"
+    "submit": "Submit",
+    "home": "Home"
   }
 }

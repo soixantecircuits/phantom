@@ -42,6 +42,7 @@
     "entry-also-input": "Variantes de l'entrée",
     "entry-extras-input": "Informations supplémentaires",
     "entry-image-input": "Image de l'entrée",
-    "submit": "Soumettre"
+    "submit": "Soumettre",
+    "home": "Accueil"
   }
 }
