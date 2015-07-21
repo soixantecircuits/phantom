@@ -14,9 +14,17 @@ Iron.Router.hooks.checkIfLogged = function(){
   this.next();
 };
 
+Router.onAfterAction(function() {
+  i18n.init({ lng: 'en-EN', resGetPath: '/locales/__lng__/__ns__.json', load: 'current', fallbackLng: false }, function(t) {
+    $('[data-i18n]').i18n();
+  });
+});
 Router.onBeforeAction('checkIfLogged', {
   only: ['dashboard', 'entry.slug', 'edit.slug', 'new.entry']
 });
+
+
+
 
 Router.route('/', function(){
   if(Meteor.userId() !== null){
