@@ -13,7 +13,7 @@ Make sure you have [meteor](https://www.meteor.com/install) and [mongodb](http:/
 
 1. Clone the repo
 2. Create a `settings.json` file based from `settings.example.json` and fill with as you wish. 
-Note: the folder where you upload must be in public if you wanna see the image in the front. The `relativePath` variable is the path from the public folder to your upload folder.
+Note: the folder where you upload will be in the public folder, so you can see images in front end
 3. Run `meteor --settings settings.json`
 
 ## Troubleshouting

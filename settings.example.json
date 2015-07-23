@@ -1,6 +1,5 @@
 {
 	"public": {
-		"uploadPath": "/[...]/phantom/public/uploads",
-		"relativePath": "/uploads/"
+		"uploadPath": "/public/uploads"
 	}
 }

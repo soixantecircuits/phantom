@@ -26,5 +26,8 @@ Meteor.methods({
         });
       }
     });
+  },
+  'getUploadPath': function(){
+    return process.env.PWD + '/public' + Meteor.settings.public.uploadPath;
   }
 });

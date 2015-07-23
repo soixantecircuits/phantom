@@ -14,6 +14,6 @@ Template.dashboard.helpers({
     return Entries.find({}, {sort: {createdAt: -1}}).fetch();
   },
   imgFolder: function(){
-    return Meteor.settings.public.relativePath;
+    return Meteor.settings.public.uploadPath;
   }
 });

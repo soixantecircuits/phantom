@@ -3,7 +3,7 @@ Template.entry.helpers({
     return Entries.findOne({slug: Session.get('currentSlug')});
   },
   imgFolder: function(){
-  	return Meteor.settings.public.relativePath;
+  	return Meteor.settings.public.uploadPath;
   }
 }),
 
@@ -13,7 +13,9 @@ Template.entry.events({
   },
   'click .js-delete': function (event) {
   	var entry = Entries.findOne({slug: Session.get('currentSlug')});
+    console.log(entry);
   	Entries.remove(entry._id);
+    Images.remove(entry.imageId);
   	Session.set('toasts', [{content: entry.title+' has been removed'}]);
   	Router.go('/dashboard');
   }
