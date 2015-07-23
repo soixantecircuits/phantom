@@ -13,5 +13,9 @@ Entries.allow({
   update: function (userId, doc, fieldNames, modifier) {
     console.log('Entries.js:14 - update');
     return true;
+  },
+  remove: function(userId, doc){
+    console.log('Entrie.js - remove');
+    return true;
   }
 });

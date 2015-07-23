@@ -35,6 +35,7 @@
     "back": "<- Contre de contrôle",
     "entry-title": "Entrée",
     "edit": "Modifier cette entrée",
+    "delete": "Supprimer cette entrée",
     "newentry-title": "Nouvelle entrée",
     "newentry-title-input": "Titre de l'entrée",
     "entry-description-input": "Description de l'entrée",

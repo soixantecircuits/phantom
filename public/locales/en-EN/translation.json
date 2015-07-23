@@ -35,6 +35,7 @@
     "back": "<- Dashboard",
     "entry-title": "Entry",
     "edit": "Edit this entry",
+    "delete": "Delete this entry",
     "newentry-title": "New entry",
     "newentry-title-input": "Entry title",
     "entry-description-input": "Entry description",
