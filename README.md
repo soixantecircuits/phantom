@@ -40,7 +40,7 @@ Phantom is a minimal CMS destined to easily write, store and retrieve content fr
 ### Demeteorization
 
 1. Install `demeteorizer` by running `$ [sudo] npm i -g demeteorizer`
-2. Run `$ ./earthcontrol.sh` script to demeteorize the instance and install dependencies.
+2. Run `$ ./earthcontrol.sh` script to demeteorize the instance and install dependencies (you should take a look inside before though to understand what it does).
 
 ## Troubleshouting
 
