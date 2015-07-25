@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo "--	Demeteorization..."
 demeteorizer
 echo "--	Getting into the ./.demeteorized/ folder"
