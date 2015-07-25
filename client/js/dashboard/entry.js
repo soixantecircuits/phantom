@@ -17,7 +17,7 @@ Template.entry.events({
     var entry = Entries.findOne({slug: Session.get('currentSlug')});
     console.log(entry);
     Entries.remove(entry._id);
-    Images.remove(entry.imageId);
+    Images.remove(entry.imageID);
     Session.set('toasts', [{content: entry.title+' has been removed'}]);
     Router.go('/dashboard');
   }
