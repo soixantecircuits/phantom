@@ -13,7 +13,9 @@ Template.dashboard.helpers({
   entries: function () {
     return Entries.find({}, {sort: {createdAt: -1}}).fetch();
   },
-  imgFolder: function(){
-    return Meteor.settings.public.uploadPath;
+  getImagePath: function(imageID){
+    var image = Images.findOne({_id: imageID});
+    path = image.copies.images.key.replace(/-/g, '/');
+    return path;
   }
 });

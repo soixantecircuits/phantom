@@ -67,3 +67,4 @@ tmp/
 settings.json
 smtp.js
 public/exports/**
+cfs/**

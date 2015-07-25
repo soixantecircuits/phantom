@@ -8,9 +8,9 @@
       <ul class="list-group">
         {{#each entries}}
           <li class="list-group-item">
-            <a href="/entry/{{slug}}">
-              <img class="img-thumbnail" width="100" src="{{imgFolder}}/{{image}}">
-              <strong>{{title}}</strong>
+            <a href="/entry/{{this.slug}}">
+              <img class="img-thumbnail" width="100" src="/cfs/files/{{getImagePath this.imageID}}">
+              <strong>{{this.title}}</strong>
             </a>
           </li>
         {{/each}}
