@@ -23,7 +23,7 @@ Phantom is a minimal CMS destined to easily write, store and retrieve content fr
   - Create an admin user for your isntance db:
   ```
   > use phantom
-  > db.createUser({user: "admin", pwd: "phantompwd", roles: [{role: "userAdmin", db: "phantom"}]})
+  > db.createUser({user: "admin", pwd: "phantompwd", roles: [{role: "readWrite", db: "phantom"}]})
   ```
 
   - Enable authentication security for mongo by uncommenting the `#auth = true` line in `/etc/mongodb.conf`
