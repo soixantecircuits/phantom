@@ -69,3 +69,4 @@ smtp.js
 public/exports/**
 cfs/**
 public/exports/export.json
+phantom-pm2.json
