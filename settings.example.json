@@ -1,7 +1,11 @@
 {
   "majordome": {
-    "address": "0.0.0.0",
-    "port": 5050,
     "path": "/path/to/majordome/files/"
+  },
+  "public": {
+    "majordome": {
+      "address": "0.0.0.0",
+      "port": 5050
+    }
   }
 }
