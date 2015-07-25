@@ -38,7 +38,8 @@ Phantom is a minimal CMS destined to easily write, store and retrieve content fr
 
 1. Clone the repo
 2. Duplicate the `settings.example.json` file into `settings.json` and fill it with your config.
-3. Run `$ meteor --settings settings.json`
+3. Create a `public/exports/` folder.
+4. Run `$ meteor --settings settings.json`
 
 ### Demeteorization
 
