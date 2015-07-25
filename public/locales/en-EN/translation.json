@@ -31,6 +31,7 @@
     "title": "Dashboard",
     "newentry": "New entry",
     "export": "Export",
+    "get-export": "Get export",
     "list-title": "Entry list",
     "back": "<- Dashboard",
     "entry-title": "Entry",

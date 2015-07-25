@@ -1,3 +1,5 @@
+FS.debug = true;
+
 Images = new FS.Collection("Images", {
   stores: [new FS.Store.FileSystem("images")]
 });
@@ -16,3 +18,7 @@ Images.allow({
     return true;
   }
 });
+
+if(Meteor.isServer){
+  Meteor.isDemeteorized = process.cwd().indexOf('.demeteorized') > -1 ? true : false;
+}

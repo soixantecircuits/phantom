@@ -3,9 +3,11 @@ Template.dashboard.events({
     Router.go('/new-entry');
   },
   'click .js-export': function (event) {
-    Meteor.call('exportProducts', function(){
-      window.location = '/exports.zip', '_blank';
-    });
+    Session.set('toasts', [{content: 'Export en cours...'}]);
+    Meteor.call('exportProducts');
+  },
+  'click .js-get-export': function (event) {
+    window.location = '/exports.zip', '_blank';
   }
 });
 
