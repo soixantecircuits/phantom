@@ -7,7 +7,7 @@ Template.dashboard.events({
     Meteor.call('exportProducts');
   },
   'click .js-get-export': function (event) {
-    window.location = '/exports.zip', '_blank';
+    window.location = 'http://' + Meteor.settings.public.majordome.address + ':' + Meteor.settings.public.majordome.port + '/exports.zip/please', '_blank';
   }
 });
 

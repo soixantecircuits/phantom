@@ -34,12 +34,18 @@ Phantom is a minimal CMS destined to easily write, store and retrieve content fr
 
 ## Installation and usage
 
+*Phantom works in collaboration with [Majordome](http://github.com/hugohil/majordome).*
+
 1. Clone the repo
-3. Run `$ meteor`
+2. Duplicate the `settings.example.json` file into `settings.json` and fill it with your config.
+3. Run `$ meteor --settings settings.json`
 
 ### Demeteorization
 
+*You'll probably need [pm2](https://github.com/Unitech/pm2)*
+
 1. Install `demeteorizer` by running `$ [sudo] npm i -g demeteorizer`
+2. Duplicate the `phantom-pm2.example.json` file into `phantom-pm2.json` and fill it with your config (i.e mongodb infos and `METEOR_SETTINGS`).
 2. Run `$ ./earthcontrol.sh` script to demeteorize the instance and install dependencies (you should take a look inside before though to understand what it does).
 
 > Note: Don't forget to run `$ nvm use 0.10` each time you open a new shell window (it doesn't work in bash scripts so I can't add this to the `./earthcontrol.sh`).

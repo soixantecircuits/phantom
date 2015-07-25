@@ -20,13 +20,8 @@ Meteor.methods({
       } else {
         console.log("JSON saved to " + filename);
         var zipArchive = archiver('zip');
-        var publicDir = '';
-        if(Meteor.isDemeteorized){
-          publicDir = process.cwd().substr(0, process.cwd().indexOf('/server')) + '/web.browser/app/exports.zip';
-        } else {
-          publicDir = base + '/public/exports.zip';
-        }
-        var output = fs.createWriteStream(publicDir);
+        var majordomeDir = Meteor.settings.majordome.path;
+        var output = fs.createWriteStream(majordomeDir + 'exports.zip');
         output.on('close', function() {
           console.log('done with the zip');
         });

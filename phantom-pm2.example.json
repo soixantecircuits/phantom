@@ -1,0 +1,23 @@
+{
+  "apps": [
+    {
+      "name": "phantom",
+      "script": "./.demeteorized/main.js",
+      "log_date_format": "YYYY-MM-DD HH:mm:ss Z",
+      "exec_mode": "fork_mode",
+      "max_restarts": 0,
+      "env": {
+        "PORT": 3000,
+        "MONGO_URL": "mongodb://admin:phantompwd@localhost:27017/phantom",
+        "ROOT_URL": "https://0.0.0.0",
+        "PORT": 8080,
+        "METEOR_SETTINGS": {
+          "majordome": {
+            "address": "0.0.0.0",
+            "port": 5050,
+            "path": "/path/to/majordome/files/"
+          }
+        }
+      }
+    }]
+}
