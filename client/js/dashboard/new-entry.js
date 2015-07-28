@@ -39,6 +39,7 @@ Template.newEntry.events({
             extras: xssFilters.inHTMLData(extras),
             capacity: xssFilters.inHTMLData(capacity),
             slug: xssFilters.inHTMLData(slug),
+            image: Images.findOne({_id: fileObj._id}).copies.images.key,
             imageID: fileObj._id
           }, function(err){
             if(err){
