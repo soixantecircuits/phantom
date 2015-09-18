@@ -1,6 +1,7 @@
 accounts-base@1.2.0
 accounts-password@1.1.1
 accounts-ui-unstyled@1.1.7
+anti:i18n@0.4.3
 autopublish@1.0.3
 autoupdate@1.2.1
 base64@1.0.3
@@ -16,7 +17,7 @@ cfs:collection-filters@0.2.4
 cfs:data-man@0.0.6
 cfs:file@0.1.17
 cfs:filesystem@0.1.2
-cfs:http-methods@0.0.29
+cfs:http-methods@0.0.30
 cfs:http-publish@0.0.13
 cfs:power-queue@0.9.11
 cfs:reactive-list@0.0.9
@@ -54,7 +55,7 @@ logging@1.0.7
 meteor@1.1.6
 meteor-platform@1.2.2
 meteorhacks:async@1.0.0
-meteorhacks:npm@1.3.0
+meteorhacks:npm@1.5.0
 minifiers@1.1.5
 minimongo@1.0.8
 mobile-status-bar@1.0.3
@@ -64,7 +65,7 @@ npm-bcrypt@0.7.8_2
 npm-container@1.0.0
 observe-sequence@1.0.6
 ordered-dict@1.0.3
-raix:eventemitter@0.1.2
+raix:eventemitter@0.1.3
 random@1.0.3
 reactive-dict@1.1.0
 reactive-var@1.0.5

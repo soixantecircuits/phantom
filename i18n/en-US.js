@@ -1,0 +1,50 @@
+i18n.map('en_US', {
+  "app": {
+    "name": "Phantom"
+  },
+  "login": {
+    "title": "Login",
+    "email": "Email",
+    "password": "Password",
+    "connection": "Connection",
+    "forgot": "I have lost my <a href=\"/forgot\">password</a>",
+    "signup": "I don't have an account. <a href=\"/signup\">Create one.</a>"
+  },
+  "signup": {
+    "title": "Signup",
+    "email": "Email",
+    "password": "Password",
+    "connection": "Connection",
+    "forgot": "I have lost my <a href=\"/forgot\">password</a>",
+    "signup": "I don't have an account. <a href=\"/signup\">Create one.</a>",
+    "confirm": "Confirm password",
+    "submit": "Submit"
+  },
+  "forgot": {
+    "title": "I forgot my password",
+    "help": "Enter your email and get a reset link.",
+    "email": "Your email",
+    "submit": "Submit"
+  },
+  "dashboard": {
+    "logout": "Log out",
+    "title": "Dashboard",
+    "newentry": "New entry",
+    "export": "Export",
+    "get-export": "Get export",
+    "list-title": "Entry list",
+    "back": "<- Dashboard",
+    "entry-title": "Entry",
+    "edit": "Edit this entry",
+    "delete": "Delete this entry",
+    "newentry-title": "New entry",
+    "newentry-title-input": "Entry title",
+    "entry-description-input": "Entry description",
+    "entry-capacity-input": "Entry capacity",
+    "entry-also-input": "Entry variants",
+    "entry-extras-input": "Entry extra informations",
+    "entry-image-input": "Entry image",
+    "submit": "Submit",
+    "home": "Home"
+  }
+});

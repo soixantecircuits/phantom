@@ -1,20 +1,20 @@
 <template name="login">
   <div class="row">
     <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
-      <h1 data-i18n="login.title"></h1>
+      <h1>{{{i18n "login.title"}}}</h1>
       <form id="login-form" role="form" action="action">
         <div class="form-group">
-          <label for="login-id" data-i18n="login.email"></label>
-          <input type="email" name="login-id" id="login-id" class="form-control" data-i18n="[placeholder]login.email"/>
+          <label for="login-id">{{{i18n "login.email"}}}</label>
+          <input type="email" name="login-id" id="login-id" class="form-control" placeholder="{{i18n 'login.email'}}"/>
         </div>
         <div class="form-group">
-          <label for="login-password" data-i18n="login.password"></label>
-          <input type="password" name="login-password" id="login-password" class="form-control" data-i18n="[placeholder]login.password"/>
+          <label for="login-password">{{{i18n "login.password"}}}</label>
+          <input type="password" name="login-password" id="login-password" class="form-control" placeholder="{{i18n 'login.password'}}"/>
         </div>
-        <input type="submit" id="login-button" class="btn btn-default" data-i18n="[value]login.connection" />
+        <input type="submit" id="login-button" class="btn btn-default" value="{{i18n 'login.connection'}}" />
         <div class="form-group">
-          <p data-i18n="[html]login.forgot" class="help-block"></p>
-          <p data-i18n="[html]login.signup" class="help-block"></p>
+          <p class="help-block">{{{i18n "login.forgot"}}}</p>
+          <p class="help-block">{{{i18n "login.signup"}}}</p>
         </div>
       </form>
     </div>

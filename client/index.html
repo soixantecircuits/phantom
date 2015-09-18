@@ -4,9 +4,17 @@
 </head>
 
 <body class="container">
-  {{#if currentUser}}
-    {{> logout}}
-  {{/if}}
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a href="/dashboard" class="navbar-brand">{{{i18n "app.name"}}}</a>
+      </div>
+      {{#if currentUser}}
+        {{> logout}}
+      {{/if}}
+      {{> langSwitcher}}
+    </div>
+  </nav>
 
   {{> toaster}}
 </body>

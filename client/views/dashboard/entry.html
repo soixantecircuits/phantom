@@ -1,8 +1,8 @@
 <template name="entry">
   <div class="row">
     <div class="col-xs-10 col-xs-offset-2">
-      <a href="/dashboard" data-i18n="dashboard.back"></a>
-      <h1 data-i18n="dashboard.entry-title"></h1>
+      <a href="/dashboard">{{{i18n "dashboard.back"}}}</a>
+      <h1>{{{i18n "dashboard.entry-title"}}}</h1>
       <div class="media">
         <div class="media-left">
           <img src="/cfs/files/{{getImagePath entry.imageID}}" class="media-object thumbnail" width="300" />
@@ -14,8 +14,8 @@
           <p><em>{{entry.extras}}</em></p>
         </div>
       </div>
-      <button class="js-edit btn btn-default" data-i18n="dashboard.edit">Edit</button>
-      <button class="js-delete btn btn-danger" data-i18n="dashboard.delete">Delete</button>
+      <button class="js-edit btn btn-default">{{{i18n "dashboard.edit"}}}</button>
+      <button class="js-delete btn btn-danger">{{{i18n "dashboard.delete"}}}</button>
     </div>
   </div>
 </template>

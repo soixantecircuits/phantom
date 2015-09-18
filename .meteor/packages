@@ -13,6 +13,6 @@ cfs:standard-packages
 cfs:filesystem
 meteorhacks:npm
 
-
+anti:i18n
 npm-container
 twbs:bootstrap
